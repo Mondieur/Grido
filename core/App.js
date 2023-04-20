@@ -1,6 +1,5 @@
 const filesystem = require('fs');
-const head = `
-<script defer src="./core/Producer.js"></script>`.trim();
+const head = `<script defer src="./core/Producer.js"></script>`.trim();
 
 let selector = `<my-element></my-element>`.trim();
 
@@ -30,11 +29,13 @@ my-element {
 
 // Create a new file with some content
 filesystem.writeFile('../index.html', html, function(err) {
-  if (err) throw err && console.log('Error');
+  if (err) 
+    throw err && console.log('Error');
   console.log('.html file created and saved!');
 });
 
 filesystem.writeFile('../style.css', css, function(err) {
-  if (err) throw err && console.log('Error');
+  if (err)
+    throw err && console.log('Error');
   console.log('.css file created and saved!');
 });

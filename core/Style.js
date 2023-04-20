@@ -1,5 +1,6 @@
 import { log, done, warn, info } from './Log';
 
+// TODO: add style to element
 export function addStyles() {
   
   const style = document.createElement('style');
@@ -16,13 +17,7 @@ export function addStyles() {
       color: red;
     }
   `;
-  
-  document.head.appendChild(
-    style.appendChild(
-      document.createTextNode(css)
-    )
-  );
-  
-}
 
-// give it a selector, some styles and functions
+  // TODO: CSSOM API 
+  document.head.appendChild(style.appendChild(document.createTextNode(css))); 
+}

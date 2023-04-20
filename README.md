@@ -29,3 +29,33 @@ This project was created by [Mondieur Gara](https://github.com/Mondieur).
 
 ### License
 This project is licensed under the [MIT License]().
+
+### Typescript Testing
+
+To run the `app.ts` type `tsc app.ts`.
+
+1. Intall the typescript compiler
+```
+npm install typescript --save-dev
+```
+2. Run the compiler
+```
+npx tsc
+```
+3. The `tsconfig.json` configures the compilaton.
+
+### Configuring the compiler
+```
+npx tsc --init
+```
+
+Here is an example of more things you could add to the `tsconfig.json` file:
+
+```
+{
+  "include":["src"],
+  "compilerOptions":{
+    "outDir": "./build"
+  }
+}
+```
