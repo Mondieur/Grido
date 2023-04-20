@@ -1,10 +1,10 @@
-function Decorator(): void {
+function Decorator(target: any): void {
   console.log("Annotation applied");
 }
 
+@Decorator
 class Pearson {
 
-  @Decorator
   walk(): void {
 
   }
